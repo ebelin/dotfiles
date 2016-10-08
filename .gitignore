@@ -7,7 +7,7 @@
 .phoronix-test-suite
 .pki
 .sudo_as_admin_successful
-.xsession-errors.*
+.xsession-errors*
 Downloads
 Pictures
 Release.key
