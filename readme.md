@@ -7,8 +7,8 @@
    * Fixed width: Noto Sans Mono, 11
    * Small: Bitstream Vera Sans, 9
    * Toolbar: Bitstream Vera Sans, 10
-   * Menu: Bitstream Vera Sans, 11
-   * Window Title: Doid Sans, bold, 11
+   * Menu: Droid Sans, 11
+   * Window Title: Droid Sans, bold, 11
 
 ## Bash
 
