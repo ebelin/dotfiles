@@ -1,10 +1,20 @@
 # Setting up new machine
 
+```shell
+sudo dnf install tlp
+sudo systemctl enable tlp.service 
+sudo systemctl start tlp.service 
+sudo systemctl status tlp.service 
+sudo dnf install util-linux
+sudo dnf install git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## ZSH
 
 ```shell
 sudo dnf install zsh
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 ```
 
 ## Fonts and Theme
