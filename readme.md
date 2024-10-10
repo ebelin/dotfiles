@@ -1,19 +1,31 @@
 # Setting up new machine
 
+## KDE
+
+1. System Settings, Fonts
+   * General: Bitstream Vera Sans, 11
+   * Fixed width: Noto Sans Mono, 11
+   * Small: Bitstream Vera Sans, 9
+   * Toolbar: Bitstream Vera Sans, 10
+   * Menu: Bitstream Vera Sans, 11
+   * Window Title: Doid Sans, bold, 11
+
+## Bash
+
 ```shell
 sudo dnf install tlp
 sudo systemctl enable tlp.service 
 sudo systemctl start tlp.service 
 sudo systemctl status tlp.service 
-sudo dnf install util-linux
-sudo dnf install git
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## ZSH
 
 ```shell
 sudo dnf install zsh
+sudo dnf install util-linux
+sudo dnf install git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 ```
 
@@ -66,6 +78,17 @@ sudo dnf config-manager --set-enabled google-chrome
 sudo dnf install google-chrome-stable
 reboot
 ```
+
+### Make fonts crispy
+
+1. chrome://flags
+   * #ozone-platform-hint -> Auto
+1. chrome://settings
+   * Font size: Large (20)
+   * Standard: Droid Sans
+   * Serif: Bitstream Vera Serif
+   * Sans-serif: Droid Sans
+   * Fixed-width: SejaVu Sans Mono
 
 ## Git, GitHub, and dot-files
 
