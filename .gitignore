@@ -1,14 +1,5 @@
-.*authority
-.cache
-.gnome
-.gtkrc-2.0
-.lesshst
-.mozilla
-.phoronix-test-suite
-.pki
-.sudo_as_admin_successful
-.xsession-errors*
-Downloads
-Pictures
-Release.key
-examples.desktop
+# Vim
+*~
+
+# MacOSX
+.DS_Store
