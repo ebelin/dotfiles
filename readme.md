@@ -100,3 +100,18 @@ gh auth login
 gh repo clone ebelin/dotfiles
 cd dotfiles
 ```
+
+## BIOS Reset
+
+```shell
+$ sudo efibootmgr
+
+# lsblk -f | grep efi
+> ├─nvme0n1p1 vfat FAT32 146D-A824 973.1M 5% /boot/efi
+
+# ls /boot/efi/EFI/fedora/ | grep -E -e 'grub.*efi'  
+grubia32.efi
+grubx64.efi
+
+$ sudo efibootmgr --create --disk /dev/nvme0n1 --part 1 --label Fedora --loader \EFI\fedora\grubx64.efi
+```
