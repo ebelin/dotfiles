@@ -58,6 +58,7 @@ p10k configure
 ## ZSH Plugins
 
 ```shell
+sudo dnf install fzf
 omz update
 omz plugin list
 omz plugin info fzf
