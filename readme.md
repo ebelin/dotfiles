@@ -110,7 +110,7 @@ $ sudo efibootmgr
 > ├─nvme0n1p1 vfat FAT32 146D-A824 973.1M 5% /boot/efi
 
 # ls /boot/efi/EFI/fedora/ | grep -E -e 'grub.*efi'  
-shimx32.efi
+shimx64.efi
 grubx64.efi
 
 $ sudo efibootmgr --create --disk /dev/nvme0n1 --part 1 --label Fedora --loader \\EFI\\fedora\\shimx64.efi
