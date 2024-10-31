@@ -67,8 +67,10 @@ omz plugin enable fzf
 omz plugin disable fzf
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 omz plugin enable zsh-autosuggestions
 omz plugin enable zsh-syntax-highlighting
+omz plugin enable zsh-autocomplete
 ```
 
 ## Google Chrome
